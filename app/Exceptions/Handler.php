@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -48,6 +49,14 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        /*if ($exception instanceof AuthenticationException && $request->expectsJson()) {
+            return response()->json([
+                "status" => 'error',
+                "code" => '0',
+                "message" => 'wrong credentials'
+            ], 401);
+        }*/
+
         return parent::render($request, $exception);
     }
 }
