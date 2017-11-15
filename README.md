@@ -1,4 +1,5 @@
 # Laravel starter-kit (with Passport and Swagger)
+![screenshot](https://github.com/islem-kms/l5-passport-swagger-starter/blob/master/Screenshot-Kms-Starter.png)
 ### Installation
 
 Clone or download the repository, open the project folder in terminal then run:
@@ -35,4 +36,6 @@ Or run the generate command:
 ```
 php artisan l5-swagger:generate
 ```
-Browse to http://service-url **/api/documentation** for swagger documentation. 
+Browse (to http://service-url) **/api/documentation** for swagger documentation. 
+If everything is working fine, you should see this screen:
+![screenshot](https://github.com/islem-kms/l5-passport-swagger-starter/blob/master/Screenshot-Kms-Starter.png)
