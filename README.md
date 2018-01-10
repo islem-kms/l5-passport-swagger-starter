@@ -7,8 +7,8 @@ Clone or download the repository, open the project folder in terminal then run:
 sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache
 cp .env.example .env
-php artisan key:generate
 composer install
+php artisan key:generate
 ``` 
 Create a database and set database connection in **.env** file
 ```
